@@ -10,3 +10,4 @@
 
 ## Steps to be taken
   - [ ] understanding the messenger API and docs
+  - [x] choose from Handover protocol, One-Time Notification,  Private Replies & quick replies 
