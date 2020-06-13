@@ -27,11 +27,15 @@ const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 const 
   request = require('request'),
   express = require('express'),
-  body_parser = require('body-parser'),
+
 
 
   
-  app = express().use(body_parser.json()); // creates express http server
+  app = express()
+  
+  
+  app.use(express.json());
+  app.use(express.urlencoded({extended:false})); // creates express http server
 
 
 // Accepts POST requests at /webhook endpoint
